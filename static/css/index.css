@@ -1,0 +1,57 @@
+.maintitle{
+padding:20px;
+font-family: 'Jua', sans-serif;}
+
+.list{
+    padding:6px;
+}
+.flex-container {
+  display: flex;
+  padding:10px
+}
+.nextbtn{
+margin-left:15px}
+
+
+.similarDocument{
+padding:20px}
+.topRankingWord{
+padding:20px}
+
+.btn-link{
+color:black}
+
+.mb-3{
+width:400px;
+margin-left:20px
+}
+
+.contents{
+padding:20px;
+padding-top:0px}
+
+.title{
+padding:20px;
+padding-top:0px;
+font-family: 'Jua', sans-serif;}
+
+.wordresult{
+padding:10px;
+padding-left:20px;}
+
+a{
+decoration:none}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.info{
+font-family: 'Jua', sans-serif;
+padding-left:20px;
+font-size:20px
+}

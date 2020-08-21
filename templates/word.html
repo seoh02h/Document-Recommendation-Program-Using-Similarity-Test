@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>returnpp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <h3 class="maintitle"><a href="/">유사도 검사를 통한 문서 추천 프로그램 </a></h3>
+    <form action="/word" method="get" class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="word" name="word" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-primary" >SEARCH</button>
+    </form>
+    <body>
+    {%if(n==0) : %}
+    <div>검색 결과가 없습니다.</div>
+    {%else%}
+        <div class="info">검색어 : {{keyword}}</div>
+        {%for i in range(n) :%}
+            <div class="wordresult">{{i+1}}. {{result[i]}}</div>
+        {%endfor%}
+    {%endif%}
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>returnpp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <body>
+        <h3 class="maintitle"><a href="/">유사도 검사를 통한 문서 추천 프로그램 </a></h3>
+        <h2 class="title">{{title}}</h2>
+        <div class="contents">{{contents}}</div>
+        <div class="similarDocument">
+        <h3>Similar Documents</h3>
+            {%for i in range(10) :%}
+        <div>{{i+1}}. {{sim[i]}}</div>
+            {%endfor%}
+            </div>
+        <div class="topRankingWord">
+        <h3>Top Ranking Word</h3>
+            {%for i in range(5) :%}
+        <div>{{i+1}}. {{words[i][0]}}</div>
+            {%endfor%}
+            </div>
+    </body>
+</html>

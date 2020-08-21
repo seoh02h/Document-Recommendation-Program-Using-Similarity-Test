@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>returnpp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <body>
+    <h3 class="maintitle"><a href="/">유사도 검사를 통한 문서 추천 프로그램 </a></h3>
+    <form action="/word" method="get" class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="word" name="word" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-primary" >SEARCH</button>
+    </form>
+
+    <div class="flex-container">
+    {%if(not(currpage==1)) :%}
+    <form action="/next" method="get" class="backbtn">
+        <input value = {{currpage+-1}} name="page" hidden>
+        <button class="btn btn-light">BACK</button>
+    </form>
+    {%endif%}
+
+    <form action="/next" method="get" class="nextbtn">
+        <input value = {{currpage+1}} name="page" hidden>
+        <button class="btn btn-light">NEXT</button>
+    </form>
+      </div>
+
+    {%for i in range(15) :%}
+    <div class="list">
+        <form action="/documents" method="get">
+        <input value = {{i+currpage*15-15}} name="title" hidden>
+        <button class="btn btn-link">{{i+currpage*15-14}}. {{showtitle[i]}}</button>
+        </form>
+    </div>
+    {%endfor%}
+    </body>
+</html>
