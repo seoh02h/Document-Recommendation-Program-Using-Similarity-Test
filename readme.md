@@ -13,7 +13,7 @@
 # About The Project
 
 Document Recommendation Program Using Similarity Test<br>
-This program is applicable to all documents with titles and content.
+This program is applicable to all documents with title and contents.
 I used economic news as an example.
 
 # Usage
