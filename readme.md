@@ -41,14 +41,12 @@ run main.py<br>
 ## Web
 
 run main_web.py<br>
-<img src="img/w_home.JPG" width="60%"><br>1. CLICK the title of the article to see the content of the article, articles similar to this article, and words that have been used a lot.<br>
-<img src="img/w_doc1.JPG" width="60%"><br>
-<img src="img/w_doc2.JPG" width="60%"><br>
+![demo](img/web.gif)
+<br>1. CLICK the title of the article to see the content of the article, articles similar to this article, and words that have been used a lot.<br>
 
 2. CLICK next or back button to see another page. One page shows 15 articles.<br>
-   <img src="img/w_next.JPG" width="60%"><br>
 3. If you search the input box at the top, you can see documents where the word is used a lot.<br>
-   <img src="img/w_word.JPG" width="60%">
+   >
 
 ### precautions
 
