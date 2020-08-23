@@ -23,6 +23,7 @@ while(1):
         for tit in titleList:
             if (inputData == tit):
                 idx = titleList.index(tit)
+                print("\n제목 : "+tit+"\n")
                 print(contentsList[titleList.index(tit)])
                 print("\nSimilar Documents")
                 similarityResult = similarityTest(idx,contentsList,titleList)
