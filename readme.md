@@ -26,7 +26,7 @@ run main.py<br>
 <h3>Input Title / 'next' / 'word' / 'exit' :</h3>
 
 1. Enter the title of the document to see the content of the document, documents similar to this document, and words that have been used a lot.<br>
-   <img src="img/doc1.JPG" width="60%">
+   <img src="img/doc1.JPG" width="60%"><br>(중략)<br>
    <img src="img/doc2.JPG" width="60%">
    <br>
 
