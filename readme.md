@@ -44,17 +44,5 @@ run main.py<br>
 ## Web
 
 run main_web.py<br>
-![demo](img/web.gif)
-<br>
 
-1. CLICK the title of the article to see the content of the article, articles similar to this article, and words that have been used a lot.<br>
-2. CLICK next or back button to see another page. One page shows 15 articles.<br>
-3. If you search the input box at the top, you can see documents where the word is used a lot. Show only documents with three or more words.
-   <br>
 
-### precautions
-
-If you don't have forsearchword.txt, run forSearchWord.py and then main.py or main_web.py
-The process of extracting words from all articles to search for words took too long.
-So I used forSearchWord.py to put the list in a txt file.
-By reading the txt file and getting the list, I was able to shorten the execution time.
